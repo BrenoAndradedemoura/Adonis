@@ -6,7 +6,6 @@
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
     "start": "node build/server.js",
-    "test": "node ace test",
     "migrate": "node ace migration:run"
   },
   "devDependencies": {

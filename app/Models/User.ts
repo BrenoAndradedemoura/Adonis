@@ -13,6 +13,9 @@ export default class User extends BaseModel {
   @column()
   public email: string
 
+  @column()
+  public token: string
+
   @column({ serializeAs: null })
   public password: string
 
@@ -24,7 +27,6 @@ export default class User extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
-  token: any
 
   @beforeSave()
   public static async hashPassword (user: User) {

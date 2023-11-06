@@ -1,4 +1,4 @@
-import type { Htpp } from '@ioc:Adonis/Core/HttpContext'
+import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import User from '../../Models/User'
 import { Queue } from '@ioc:Rlanz/Queue'
 
